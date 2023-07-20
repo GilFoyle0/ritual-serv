@@ -136,6 +136,7 @@
 }
 
 @media screen and (max-width: 548px) {
+
 	.description {
 		max-width: calc(290px + (367 - 300) * ((100vw - 360px) / (548 - 360)));
 		padding: 10px;
@@ -158,6 +159,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
 	.wrapper {
 		padding-left: calc(15px + (15 - 5) * ((100vw - 360px) / (480 - 360)));
 		justify-items: start;

@@ -36,6 +36,12 @@
 	}
 }
 
+@media (max-width: 479.98px) {
+	.cloudsService {
+		height: 300px;
+	}
+}
+
 
 .top {
 	padding-top: 100px;

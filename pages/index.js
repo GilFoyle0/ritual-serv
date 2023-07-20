@@ -28,7 +28,7 @@ import cn from 'classnames';
     <div className={styles.main}>
 		<div className={cn(styles.sectionWrap, styles.top)}>
 			<SectionTop className={styles.sectionTop}/>
-			<Image src={CloudsService} alt='облака' width='100%' quality={100} className={cn(styles.clouds, styles.cloudsService)}/>
+			<div className={cn(styles.clouds, styles.cloudsService)}><Image src={CloudsService} alt='облака' width='100%' quality={100}/></div>
 		</div>
 		<div className={cn(styles.sectionWrap, styles.service)}>
 			<Image loading='lazy' src={BoyImg} quality={100} alt='Мальчик' className={styles.boy1}/>
