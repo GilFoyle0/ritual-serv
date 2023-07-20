@@ -1,0 +1,22 @@
+.input {
+	border: none;
+	border-radius: 5px;
+	background: #E3E7EA;
+	padding: 19px;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130.187%;
+}
+
+.input ::placeholder {
+	color: var(--gray);
+
+
+}
+
+.input::placeholder::first-letter {
+	color: black
+}

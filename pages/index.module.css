@@ -1,0 +1,214 @@
+.home {}
+
+.sectionWrap {
+	position: relative;
+	display: grid;
+	grid-template-areas: '. section .';
+	grid-template-columns: auto minmax(320px, 1225px) auto;
+}
+
+
+@media (max-width: 1500px) {
+	.sectionWrap {
+		padding: 15px;
+	}
+}
+
+.sectionTop,
+.sectionService,
+.sectionPrinciples,
+.sectionCall,
+.sectionWork,
+.sectionExamples,
+.sectionWhyWe {
+	grid-area: section;
+}
+
+.principles {
+	padding-top: 300px;
+	margin-bottom: -100px;
+	z-index: -1;
+}
+
+@media (max-width: 1023.98px) {
+	.principles {
+		padding-top: 250px;
+	}
+}
+
+
+.top {
+	padding-top: 100px;
+	margin-bottom: -300px;
+}
+
+
+.boy1 {
+	z-index: 0;
+	top: 170px;
+	left: 0;
+	position: absolute;
+	object-fit: cover;
+}
+
+.basket {
+	bottom: -200px;
+	right: 0;
+	position: absolute;
+	object-fit: cover;
+	z-index: 0;
+}
+
+
+
+.texture {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-color: #343642;
+}
+
+.cloudPrinc1 {
+	top: -5px;
+}
+
+.cloudPrinc2 {
+	bottom: -5px;
+}
+
+
+.sectionCallTop {
+	margin-bottom: 300px;
+	padding-bottom: 200px;
+}
+
+
+.call {
+	margin-bottom: -800px;
+}
+
+
+.clouds {
+	position: absolute;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cloudsService {
+	bottom: 390px;
+}
+
+
+.work {
+	z-index: -1;
+	margin-bottom: -400px;
+}
+
+.gvozdika {
+	z-index: -1;
+	position: absolute;
+	right: 11%;
+	top: 25%;
+}
+
+.memory {
+	z-index: -1;
+	position: absolute;
+	right: 0%;
+	bottom: 15%;
+}
+
+@media screen and (max-width: 760px) {
+	.memory {
+		opacity: 0.3;
+	}
+
+}
+
+.sectionExamples {
+
+	overflow: hidden;
+}
+
+.backgroundExmp {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: #343642;
+	z-index: -1;
+}
+
+
+.exapmples {}
+
+.cloudEx1 {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+
+.cloudEx2 {
+	bottom: 0px;
+}
+
+.roses {
+	position: absolute;
+	left: 0;
+	top: 1400px;
+	z-index: -1;
+}
+
+
+.exapmples {
+	z-index: 1;
+	overflow: hidden;
+	margin-bottom: -5px;
+
+}
+
+.whyWe {
+	z-index: -1;
+}
+
+.whyWeLeft {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0px;
+}
+
+.whyWeRight {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	z-index: -1;
+}
+
+.cloudWhyWe {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.boy2 {
+	position: absolute;
+	left: 0;
+	top: 1800px;
+	z-index: -1;
+}
+
+.statue {
+	z-index: -1;
+	right: 0;
+	top: 500px;
+	position: absolute;
+}
+
+.callBottom {
+	background-color: #F6F6F6;
+}

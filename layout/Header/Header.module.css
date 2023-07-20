@@ -1,0 +1,251 @@
+.header {
+	padding: 20px 0;
+}
+
+.background {
+	width: 100%;
+	height: calc(850px + (1150 - 850) * ((100vw - 360px) / (1920 - 360)));
+	z-index: -999;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-image: url('../../public/angel_background.png');
+	background-repeat: no-repeat;
+	background-position: top 0% right 50%;
+
+}
+
+.wrapper {
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	column-gap: 50px;
+}
+
+.logo {
+	grid-column: 1/2;
+}
+
+.headerNav {
+	grid-column: 2/3;
+}
+
+.headerNav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	justify-items: center;
+	column-gap: 30px;
+}
+
+.headerNav a {
+	color: var(--white);
+	white-space: nowrap;
+	font-size: 18px;
+}
+
+.phone {
+	cursor: pointer;
+	color: var(--white);
+	font-size: 18px;
+	white-space: nowrap;
+	align-self: center;
+}
+
+.phone:hover {
+	color: var(--white);
+}
+
+
+.burgerMenu {
+	right: 0;
+	display: none;
+	cursor: pointer;
+	height: 27px;
+	width: 27px;
+	margin: 50px;
+	overflow: visible;
+	position: relative;
+	z-index: 3;
+}
+
+.spanBurger,
+.spanBurger::before,
+.spanBurger::after {
+	background: #fff;
+	display: block;
+	height: 2px;
+	opacity: 1;
+	position: absolute;
+	transition: 0.3s ease-in-out;
+}
+
+.spanBurger::before,
+.spanBurger::after {
+	content: '';
+}
+
+.spanBurger::before {
+	left: 0px;
+	top: -10px;
+	width: 27px;
+}
+
+.spanBurger {
+	right: 0px;
+	top: 13px;
+	width: 27px;
+}
+
+.spanBurger::after {
+	left: 0px;
+	top: 10px;
+	width: 27px;
+}
+
+
+.close {
+	.spanBurger::before {
+		top: 0px;
+		transform: rotate(90deg);
+		width: 27px;
+	}
+
+	.spanBurger {
+		transform: rotate(-45deg);
+		top: 13px;
+		width: 27px;
+	}
+
+	.spanBurger::after {
+		top: 0px;
+		left: 0;
+		transform: rotate(90deg);
+		opacity: 0;
+		width: 0;
+	}
+}
+
+.menuOpen {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 0;
+	min-width: 100%;
+	min-height: 100%;
+	visibility: visible;
+	opacity: 1;
+	padding-top: 100px;
+	background: rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+
+	.headerNav>a {
+		color: #fff;
+		display: block;
+		font-size: 32px;
+		margin-bottom: 30px;
+		text-decoration: none;
+	}
+
+	&.overlay {
+		visibility: visible;
+		opacity: 1;
+		padding-top: 100px;
+		background: rgba(0, 0, 0, 0.8);
+	}
+}
+
+.burgerMenu.close {
+	right: 15px;
+	position: fixed;
+}
+
+.headerNav.menuOpen {
+	display: grid;
+	overflow-y: auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px;
+	grid-auto-rows: 100px;
+
+}
+
+.headerNav.menuOpen a {
+	font-size: 40px;
+}
+
+.hiddenPhone {
+	display: none;
+}
+
+
+@media (max-width: 1220.98px) {
+	.headerNav {
+		column-gap: 10%;
+	}
+}
+
+@media (max-width: 1023.98px) {
+	.burgerMenu {
+		display: flex;
+	}
+
+	.headerNav {
+		display: none;
+	}
+
+	.wrapper {
+		grid-template-areas: 'logo phone menu';
+	}
+
+	.phone {
+		font-size: 35px;
+		grid-area: phone;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	.wrapper {
+		column-gap: 5px;
+	}
+
+	.burgerMenu {
+		align-self: center;
+		justify-self: center;
+		margin: 0;
+	}
+
+	.phone {
+		font-size: 30px;
+	}
+
+}
+
+@media (max-width: 580px) {
+	.burgerMenu {
+		justify-self: end;
+	}
+
+	.phone {
+		display: none;
+	}
+
+	.hiddenPhone {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.headerNav.menuOpen a {
+		font-size: 30px;
+	}
+}
+
+/* @media (max-width: 360px) {
+	.background {
+		right: 0%;
+	}
+} */

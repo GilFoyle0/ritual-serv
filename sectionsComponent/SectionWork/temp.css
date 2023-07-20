@@ -1,0 +1,187 @@
+.section {
+	margin-bottom: 300px;
+}
+
+.wrapper {
+	justify-content: center;
+	justify-items: center;
+	display: grid;
+}
+
+.hr {
+	width: 215px;
+	margin-bottom: 100px;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: #E5BB82;
+	background: linear-gradient(to right, #E5BB82 0%, #FFE4BE 50%, #E5BB82 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.itemContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.itemContent {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto 1fr;
+	align-items: center;
+}
+
+.oddItem {
+	display: grid;
+	grid-template-columns: [start] 1fr [contentend] auto [middle] 1fr [end];
+	align-items: end;
+	text-align: start;
+	row-gap: 15px;
+}
+
+
+.evenItem {
+	position: relative;
+	text-align: end;
+	display: grid;
+	grid-template-columns: [start] 1fr [middle] auto [contentend] 1fr [end];
+	align-items: center;
+	row-gap: 15px;
+}
+
+.oddItem>.itemIcon {
+	grid-column: contentend/middle
+}
+
+.oddItem>.itemContent {
+	grid-row: 1/2;
+	grid-column: start/contentend
+}
+
+.evenItem>.itemIcon {
+	grid-row: 1/2;
+	grid-column: middle/contentend
+}
+
+.evenItem>.itemContent {
+	grid-row: 1/2;
+	grid-column: contentend/end
+}
+
+.hr hr {
+	height: 4px;
+	background: linear-gradient(to right, #E5BB82 0%, #FFE4BE 50%, #E5BB82 100%);
+	border: none;
+}
+
+.itemTitle {
+	align-self: center;
+	white-space: nowrap;
+	color: var(--gray-light);
+	font-size: 30px;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.oddItem>.description {
+	max-width: 300px;
+}
+
+
+
+
+#item2>.itemContent>.description {
+	text-align: left;
+	right: 0;
+	bottom: -2.5em;
+	justify-self: end;
+	max-width: 300px;
+}
+
+#item2>.itemContent>.lineWrap>.hrDashed {
+	margin: 0;
+}
+
+#item4>.itemContent>.description {
+	text-align: left;
+	right: 0;
+	bottom: -1em;
+	position: absolute;
+	justify-content: start;
+	max-width: 300px;
+}
+
+#item5 {}
+
+.oddItem>.itemContent>.lineWrap>.dote {
+	top: 15px;
+	left: 0px;
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #585A67;
+	z-index: 1;
+}
+
+.oddItem>.itemContent>.lineWrap {
+	align-self: end;
+}
+
+.evenItem>.itemContent>.lineWrap>.dote {
+	top: 15px;
+	right: 0px;
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #585A67;
+	z-index: 1;
+}
+
+
+
+
+.hrDashed {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	height: 0;
+	border: none;
+	height: 2px;
+	border-top: 3px dashed #585A67;
+	border-width: 2px;
+}
+
+.lineWrap {
+	position: relative;
+}
+
+
+
+
+
+.vrDashed {
+	margin-top: 0;
+	margin-bottom: 0;
+	border: none;
+	border-left: 5px dashed #585A67;
+	width: 2px;
+	height: 84px;
+	border-width: 2px;
+}
+
+.description {
+	max-width: 300px;
+	word-wrap: break-word;
+	color: var(--gray-dark);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 145.2%;
+}

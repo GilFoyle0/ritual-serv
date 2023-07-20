@@ -1,0 +1,41 @@
+.wrapper {
+	z-index: -3;
+	display: grid;
+	grid-template-areas:
+		". header ."
+		"main main main"
+		"footer footer footer";
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: auto minmax(320px, 1225px) auto;
+	min-height: 100vh;
+}
+
+.header {
+	grid-area: header;
+
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+@media (max-width: 1500px) {
+	.wrapper {
+
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
+		grid-template-columns: minmax(360px, 1fr);
+		grid-template-rows: auto;
+	}
+
+	.header {
+		padding: 15px;
+	}
+}
