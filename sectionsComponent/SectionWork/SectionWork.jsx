@@ -45,7 +45,7 @@ export default function SectionWork({className, ...props}) {
 				</div>
 				<hr className={styles.vrDashed}/>
 				<div className={styles.item}>
-					<Image loading='lazy' src={FourIcon} alt='Обязательства' className={styles.itemIcon}/>
+					<Image  loading='lazy' src={FourIcon} alt='Обязательства' className={styles.itemIcon}/>
 					<div className={cn(styles.itemContent, styles.evenContentItem)}>
 						<div  className={cn(styles.itemTitle, montserrat.className)}>Обязательства</div>
 						<div className={styles.lineWrap}><span className={styles.dote}/><hr className={styles.hrDashed}/></div>

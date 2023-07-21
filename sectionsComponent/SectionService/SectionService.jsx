@@ -16,7 +16,7 @@ export default function SectionService({className, ...props}) {
 				</div>
 					<div className={styles.itemContainer}>
 						<div className={styles.item}>
-							<Image loading='lazy' src={AgentIcon} alt='Вызов ритуального агента' className={styles.icon}/>
+							<Image  loading='lazy' src={AgentIcon} alt='Вызов ритуального агента' className={styles.icon}/>
 							<div className={cn(styles.itemTitle, montserrat.className)}>Вызов ритуального агента</div>
 							<div className={cn(styles.description, roboto.className)}>Ритуальный агент — это высококвалифицированный специалист, который обладает соответствующими знаниями и опытом для организации похорон на достойном уровне. Распорядитель похорон организует весь процесс от А до Я.</div>
 						</div>
@@ -31,7 +31,7 @@ export default function SectionService({className, ...props}) {
 							<div className={cn(styles.description, roboto.className)}>Оформление документов: сотрудники нашей организации обладают всеми навыками, чтобы обеспечить быстрое и качественное оформление нужных видов документов. Воспользоваться нашими услугами можно в любое время.</div>
 						</div>
 						<div className={styles.item}>
-							<Image loading='lazy' src={TransportIcon} alt='Спец транспорт' className={styles.icon}/>
+							<Image   loading='lazy' src={TransportIcon} alt='Спец транспорт' className={styles.icon}/>
 							<div className={cn(styles.itemTitle, montserrat.className)}>Спец транспорт</div>
 							<div className={cn(styles.description, roboto.className)}>Новый, отвечающий всем стандартам и нормам ритуальный транспорт, водители которых обладают опытом вождения на данном спецтранспорте более 5-ти лет.</div>
 						</div>

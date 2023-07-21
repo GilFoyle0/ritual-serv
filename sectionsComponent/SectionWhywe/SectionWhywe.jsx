@@ -1,8 +1,7 @@
-import { prata, montserrat, roboto } from '@/fonts/fonts';
+import { prata, montserrat} from '@/fonts/fonts';
 import styles from './SectionWhywe.module.css'
 import cn from 'classnames'
-import {ClientsIcon, EcoIcon, OpennessIcon, ProfessionalismIcom, ReliabilityIcon} from './icons'
-import Image from 'next/image';
+
 
 export default function SectionWhywe({className, ...props}) {
   return (

@@ -30,16 +30,13 @@ export default function SectionCall({className, ...props}) {
         return form_data.join("&");
     }
 
-
 	const validate = (e, value) => {
 		if (value == '' || String(value).length < 11) {
 			e.preventDefault();
 			setValue('');
 			return;
 		} else {
-	
-			var request = new XMLHttpRequest();
-		console.log('dsad');
+		var request = new XMLHttpRequest();
 		data_js['subject'] = 'Ритуальные услуги';
 		data_js['text'] = `Номер телефона: ${value}`;
 		var params = toParams(data_js);
@@ -54,8 +51,8 @@ export default function SectionCall({className, ...props}) {
   return (
 	<section id='call' className={cn(styles.section, className, roboto.className)} {...props}>
 		<div className={styles.sectionWrapper}>
-			<Image src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={styles.leftImg}/>
-			<Image src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={styles.rightImg}/>
+			<Image placeholder='blur' blurDataURL='/leftImg.png' src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={styles.leftImg}/>
+			<Image placeholder='blur'  blurDataURL='/rightImg.png'  src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={styles.rightImg}/>
 			<div className={styles.wrapper}>
 				<div className={styles.header}>
 					<h2 className={cn(styles.title, montserrat.className)}>Вызвать ритуального агента</h2>
