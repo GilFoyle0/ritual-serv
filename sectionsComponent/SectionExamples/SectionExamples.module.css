@@ -143,10 +143,10 @@
 		font-size: calc(20px + (30 - 20) * ((100vw - 360px) / (548 - 360)));
 	}
 
-	/* .image {
+	.image {
 		width: 100%;
 		height: calc(350px + (420 - 350) * ((100vw - 360px) / (548 - 360)));
-	} */
+	}
 
 	.button {
 		display: flex;

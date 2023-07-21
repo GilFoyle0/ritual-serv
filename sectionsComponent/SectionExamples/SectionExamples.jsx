@@ -29,12 +29,12 @@ export default function SectionExamples({className, ...props}) {
 			</div>
 			<div className={styles.itemContainer}>
 				<div className={cn(styles.item)}>
-					<div className={styles.image}><Image src='/photo1.png' loading='lazy' width={367} height={421} srcSet='/photo1@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
-					<div className={styles.image}><Image src='/photo2.png' loading='lazy' width={367} height={421} srcSet='/photo2@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
+					<div><Image src='/photo1.png' loading='lazy' width={367} height={421} srcSet='/photo1@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
+					<div><Image src='/photo2.png' loading='lazy' width={367} height={421} srcSet='/photo2@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
 					<div><Image src='/photo3.png' loading='lazy' width={367} height={421} srcSet='/photo3@2x.png' alt='Ритуальные услуги'   className={styles.image}/></div>
 					<div><Image src='/photo4.png' loading='lazy'  width={367} height={421} srcSet='/photo4@2x.png' alt='Ритуальные услуги быстро высшее качество' className={styles.image} /></div>
 					<div><Image src='/photo5.png' loading='lazy'  width={367} height={421}	srcSet='/photo5@2x.png' alt='Ритуальные услуги' className={styles.image}  /></div>
-					<div className={styles.image}><Image src='/photo6.png' loading='lazy'  width={367} height={421}  srcSet='/photo6@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
+					<div><Image src='/photo6.png' loading='lazy'  width={367} height={421}  srcSet='/photo6@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
 				</div>
 				<div className={cn(styles.item, styles.hidden)}>
 					<div><Image src='/photo7.png' loading='lazy' width={367} height={421} srcSet='/photo7@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
