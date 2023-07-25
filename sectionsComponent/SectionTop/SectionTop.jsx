@@ -3,6 +3,7 @@ import Button from '@/components/Button/Button'
 import { prata, montserrat } from '@/fonts/fonts';
 import styles from './SectionTop.module.css'
 import cn from 'classnames'
+import { SectionCall } from '..';
 
 export default function SectionTop({className, ...props}) {
   return (

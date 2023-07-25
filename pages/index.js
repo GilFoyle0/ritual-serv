@@ -39,8 +39,8 @@ import Head from 'next/head';
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</Head>
 		<div className={cn(styles.sectionWrap, styles.top)}>
+			<div className={cn(styles.clouds, styles.cloudsService)}><Image placeholder='blur' src={CloudsService} alt='облака' width={2600} quality={100}/></div>
 			<SectionTop className={styles.sectionTop}/>
-			<div className={cn(styles.clouds, styles.cloudsService)}><Image placeholder='blur' src={CloudsService} alt='облака' width='100%' quality={100}/></div>
 		</div>
 		<div className={cn(styles.sectionWrap, styles.service)}>
 			<Image placeholder='blur' loading='lazy' src={BoyImg} quality={100} alt='Мальчик' className={styles.boy1}/>

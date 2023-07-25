@@ -13,9 +13,6 @@ import { useState } from 'react';
 export default function SectionCall({className, ...props}) {
 	const [value, setValue] = useState('');
 
-	var form_id_js = "javascript_form";
-
-
     var data_js = {
         "access_token": "zu3boxuxy8em159y4mbhijrr"
     };
@@ -31,9 +28,14 @@ export default function SectionCall({className, ...props}) {
     }
 
 	const validate = (e, value) => {
+		const text = document.getElementsByClassName(styles.request)[0];
+		const input = document.getElementsByClassName(styles.input)[0];
 		if (value == '' || String(value).length < 11) {
 			e.preventDefault();
 			setValue('');
+			input.style.border = '1px solid red'
+			text.style.display = 'block';
+			text.textContent = 'Вы ввели неправильно номер.'
 			return;
 		} else {
 		var request = new XMLHttpRequest();
@@ -44,6 +46,9 @@ export default function SectionCall({className, ...props}) {
 		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		request.send(params);
 			setValue('');
+			text.style.display = 'block';
+			text.textContent = 'Спасибо за оставленную заявку. В ближайшее время с вами свяжутся.'
+			input.style.border = 'none'
 			e.preventDefault();
 		}
 	}
@@ -51,8 +56,8 @@ export default function SectionCall({className, ...props}) {
   return (
 	<section id='call' className={cn(styles.section, className, roboto.className)} {...props}>
 		<div className={styles.sectionWrapper}>
-			<Image placeholder='blur' blurDataURL='/leftImg.png' src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={styles.leftImg}/>
-			<Image placeholder='blur'  blurDataURL='/rightImg.png'  src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={styles.rightImg}/>
+			<Image  src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={styles.leftImg}/>
+			<Image  src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={styles.rightImg}/>
 			<div className={styles.wrapper}>
 				<div className={styles.header}>
 					<h2 className={cn(styles.title, montserrat.className)}>Вызвать ритуального агента</h2>
@@ -61,7 +66,8 @@ export default function SectionCall({className, ...props}) {
 				<form id='javascript_form' onSubmit={(e) => validate(e, value)} className={styles.form}>
 					<Input value={value} onChange={(e) => {setValue(e.target.value)}} pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder='+7(999) 999-99-99' className={styles.input}/>
 					<Button type='submit' id='js_send' className={styles.button}>Получить консультацию</Button>
-					<p className={styles.agreement}>Нажимая на кнопку, вы даёте согласие на обработку персональныхданных и соглашаетесь с политикой конфиденциальности</p>
+					<div style={{display: 'none'}} className={styles.request}/>
+				<p className={styles.agreement}>Нажимая на кнопку, вы даёте согласие на обработку персональныхданных и соглашаетесь с политикой конфиденциальности</p>
 				</form>
 				<div className={styles.footer}>
 					<span className={styles.phone}>+7(939) 744-20-22</span>

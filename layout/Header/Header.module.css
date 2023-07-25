@@ -4,15 +4,29 @@
 
 .background {
 	width: 100%;
-	height: calc(850px + (1150 - 850) * ((100vw - 360px) / (1920 - 360)));
+	height: 1100px;
 	z-index: -999;
 	left: 0;
 	top: 0;
 	position: absolute;
 	background-image: url('../../public/angel_background.png');
 	background-repeat: no-repeat;
-	background-position: top 0% right 50%;
+	background-size: cover;
+}
 
+
+@media screen and (max-width: 1920.97px) {
+	.background {
+		background-position: top 0% right 50%;
+		background-size: unset;
+		height: calc(850px + (1150 - 850) * ((100vw - 360px) / (1920 - 360)));
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.background {
+		height: calc(800px + (1000 - 800) * ((100vw - 360px) / (840 - 360)));
+	}
 }
 
 .wrapper {

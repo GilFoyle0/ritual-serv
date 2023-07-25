@@ -35,9 +35,9 @@ export const Header = ({ className, ...props }) => {
 			<Link href='#whywe' scroll={false}>О нас</Link>
 			<Link href='#principles' scroll={false}>Принципы работы</Link>
 			<Link href='#service' scroll={false}>Услуги</Link>
-			<Link href='#call' className={styles.hiddenPhone} scroll={false}>+7 (964) 439-48-72</Link>
+			<Link href='tel:+79644394872' className={styles.hiddenPhone} scroll={false}>+7 (964) 439-48-72</Link>
 		</nav>
-		<Link className={styles.phone} href='#call' scroll={false}>+7 (964) 439-48-72</Link>
+		<Link href='tel:+79644394872' className={styles.phone} scroll={false}>+7 (964) 439-48-72</Link>
 	</div>
   </div>;
 };

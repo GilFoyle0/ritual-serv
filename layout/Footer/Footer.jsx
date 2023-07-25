@@ -7,6 +7,7 @@ import TelegramIcon from './icons/telegram.svg';
 import FooterCloud from '../../public/footer_cloud.png'
 import FooterBack from '../../public/footer_background.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = ({className, ...props }) => {
   return (
@@ -35,8 +36,8 @@ export const Footer = ({className, ...props }) => {
 						<div className={styles.email}>delvood@list.ru</div>
 					</div>
 					<div className={styles.iconWrapper}>
-						<Image className={styles.whatsapp} src={WhatsappIcon} width={60} alt='whatsapp'/>
-						<Image className={styles.telegram} src={TelegramIcon} width={60} alt='telegram'/>
+						<Link href='https://wa.me/79129494940' target="_blank" className={styles.link}><Image className={styles.whatsapp} src={WhatsappIcon} width={60} alt='whatsapp'/></Link>
+						<Link href='https://t.me/+79129494940' target="_blank" className={styles.link}><Image className={styles.telegram} src={TelegramIcon} width={60} alt='telegram'/></Link>
 					</div>
 				</div>
 			</div>

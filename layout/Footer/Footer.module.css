@@ -1,9 +1,9 @@
 .footer {
 	display: grid;
-	z-index: -3;
+	z-index: 1;
 	position: relative;
-	background-color: black;
 	display: grid;
+	background-color: black;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 	row-gap: 50px;
@@ -94,6 +94,10 @@
 
 .email {
 	font-size: 35px;
+}
+
+.link {
+	cursor: pointer;
 }
 
 .whatsapp {
