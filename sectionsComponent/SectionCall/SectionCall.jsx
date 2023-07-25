@@ -28,8 +28,8 @@ export default function SectionCall({className, ...props}) {
     }
 
 	const validate = (e, value) => {
-		const text = document.getElementsByClassName(styles.request)[0];
-		const input = document.getElementsByClassName(styles.input)[0];
+		const text = e.target.getElementsByClassName(styles.request)[0];
+		const input = e.target.querySelector('input');
 		if (value == '' || String(value).length < 11) {
 			e.preventDefault();
 			setValue('');
