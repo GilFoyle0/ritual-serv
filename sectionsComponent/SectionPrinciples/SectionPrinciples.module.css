@@ -222,7 +222,6 @@
 
 	.gridItem5>.itemTitle {
 		padding-right: 10px;
-		font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (479.98 - 360)));
 	}
 
 	.item {
