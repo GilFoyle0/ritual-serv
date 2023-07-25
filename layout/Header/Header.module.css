@@ -221,6 +221,10 @@
 }
 
 @media (max-width: 767.98px) {
+	.logo {
+		width: calc(120px + (171 - 120) * ((100vw - 360px) / (767.98 - 360)));
+		height: calc(105px + (145 - 105) * ((100vw - 360px) / (767.98 - 360)));
+	}
 
 	.wrapper {
 		column-gap: 5px;

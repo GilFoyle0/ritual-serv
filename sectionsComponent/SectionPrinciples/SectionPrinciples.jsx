@@ -36,7 +36,7 @@ export default function SectionPrinciples({className, ...props}) {
 					</div>
 					<div className={cn(styles.item, styles.gridItem5)}>
 						<Image quality={100} loading='lazy' src={ClientsIcon} alt='Клиентоориентированность' className={styles.icon}/>
-						<div className={cn(styles.itemTitle, montserrat.className)}>Клиентоориентированность</div>
+						<div className={cn(styles.itemTitle, montserrat.className)}>Работаем на клиентов</div>
 						<div className={cn(styles.description, roboto.className)}>Мы работаем с каждым клиентом индивидуально, учитывая его культурные и религиозные традиции, а также отдельные пожелания и предпочтения. Это включает в себя предоставление различных вариантов похоронной церемонии и помощь в выборе ритуальных услуг, соответствующих уникальным потребностям каждого клиента.</div>
 					</div>
 				</div>
