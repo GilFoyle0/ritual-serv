@@ -72,7 +72,7 @@
 
 
 .button {
-	z-index: 999;
+	z-index: 9;
 	justify-self: center;
 	width: 485.571px;
 	height: 108px;
@@ -104,6 +104,7 @@
 		width: calc(300px + (367 - 300) * ((100vw - 360px) / (1749.98 - 360)));
 		height: calc(350px + (421 - 350) * ((100vw - 360px) / (1749.98 - 360)));
 	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -164,4 +165,20 @@
 		padding-left: calc(15px + (15 - 5) * ((100vw - 360px) / (480 - 360)));
 		justify-items: start;
 	}
+}
+
+
+
+
+.hoverImg img {
+	transition: transform .2s;
+	margin: 0 auto;
+	background-color: rgb(173, 173, 237);
+	border-radius: 10px;
+}
+
+.hoverImg img:hover {
+	z-index: 100;
+	position: absolute;
+	transform: scale(1.5);
 }

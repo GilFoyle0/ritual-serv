@@ -5,6 +5,7 @@
 }
 
 
+
 .sectionWrapper {
 	display: grid;
 	grid-template-columns: auto;
@@ -54,6 +55,23 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(5, auto);
+}
+
+
+.close {
+	position: absolute;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	right: 30px;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .header {
@@ -277,6 +295,11 @@
 	} */
 
 
+}
+
+
+.hideImg {
+	display: none;
 }
 
 @media screen and (max-width: 421.98px) {}

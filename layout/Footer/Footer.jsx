@@ -37,7 +37,6 @@ export const Footer = ({className, ...props }) => {
 					</div>
 					<div className={styles.iconWrapper}>
 						<Link href='https://wa.me/79129494940' target="_blank" className={styles.link}><Image className={styles.whatsapp} src={WhatsappIcon} width={60} alt='whatsapp'/></Link>
-						<Link href='https://t.me/+79129494940' target="_blank" className={styles.link}><Image className={styles.telegram} src={TelegramIcon} width={60} alt='telegram'/></Link>
 					</div>
 				</div>
 			</div>

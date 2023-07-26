@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 
 
-export default function SectionCall({className, ...props}) {
+export default function SectionCall({className, isModal, closeModal, ...props}) {
 	const [value, setValue] = useState('');
 
     var data_js = {
@@ -32,7 +32,6 @@ export default function SectionCall({className, ...props}) {
 		const input = e.target.querySelector('input');
 		if (value == '' || String(value).length < 11) {
 			e.preventDefault();
-			setValue('');
 			input.style.border = '1px solid red'
 			text.style.display = 'block';
 			text.textContent = 'Вы ввели неправильно номер.'
@@ -49,23 +48,31 @@ export default function SectionCall({className, ...props}) {
 			text.style.display = 'block';
 			text.textContent = 'Спасибо за оставленную заявку. В ближайшее время с вами свяжутся.'
 			input.style.border = 'none'
+			if(isModal) {
+				closeModal();
+			}
 			e.preventDefault();
 		}
 	}
 
   return (
-	<section id='call' className={cn(styles.section, className, roboto.className)} {...props}>
+	<section className={cn(styles.section, className, roboto.className)} {...props}>
 		<div className={styles.sectionWrapper}>
-			<Image  src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={styles.leftImg}/>
-			<Image  src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={styles.rightImg}/>
+			<Image  src='/leftImg.png' loading='lazy' width={795} height={315} alt='Вечная память' className={cn(styles.leftImg, {
+				[styles.hideImg] : isModal 
+			})}/>
+			<Image  src='/rightImg.png' loading='lazy' width={582} height={234} alt='Лента памятная' className={cn(styles.rightImg, {
+				[styles.hideImg] : isModal
+			})}/>
 			<div className={styles.wrapper}>
+				{isModal && <span onClick={closeModal} className={styles.close}>&times;</span>}
 				<div className={styles.header}>
 					<h2 className={cn(styles.title, montserrat.className)}>Вызвать ритуального агента</h2>
 					<div className={styles.description}>Если вам нужно срочно помочь с похоронами, отправьте свои данные. Наш специалист перезвонит вам</div>
 				</div>
-				<form id='javascript_form' onSubmit={(e) => validate(e, value)} className={styles.form}>
-					<Input value={value} onChange={(e) => {setValue(e.target.value)}} pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder='+7(999) 999-99-99' className={styles.input}/>
-					<Button type='submit' id='js_send' className={styles.button}>Получить консультацию</Button>
+				<form onSubmit={(e) => validate(e, value)} className={styles.form}>
+					<Input value={value} onChange={(e) => {setValue(e.target.value)}} pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,11}$" placeholder='+7(999) 999-99-99' maxLength="17" className={styles.input}/>
+					<Button type='submit' className={styles.button}>Получить консультацию</Button>
 					<div style={{display: 'none'}} className={styles.request}/>
 				<p className={styles.agreement}>Нажимая на кнопку, вы даёте согласие на обработку персональныхданных и соглашаетесь с политикой конфиденциальности</p>
 				</form>

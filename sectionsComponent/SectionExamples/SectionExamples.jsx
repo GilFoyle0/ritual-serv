@@ -28,20 +28,20 @@ export default function SectionExamples({className, ...props}) {
 			</div>
 			<div className={styles.itemContainer}>
 				<div className={cn(styles.item)}>
-					<div><Image placeholder='blur'  quality={100}  blurDataURL='/photo1.png' src='/photo1.png' loading='lazy' width={367} height={421} srcSet='/photo1@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo2.png' src='/photo2.png' loading='lazy' width={367} height={421} srcSet='/photo2@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo3.png' src='/photo3.png' loading='lazy' width={367} height={421} srcSet='/photo3@2x.png' alt='Ритуальные услуги'   className={styles.image}/></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo4.png' src='/photo4.png' loading='lazy'  width={367} height={421} srcSet='/photo4@2x.png' alt='Ритуальные услуги быстро высшее качество' className={styles.image} /></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo5.png' src='/photo5.png' loading='lazy'  width={367} height={421}	srcSet='/photo5@2x.png' alt='Ритуальные услуги' className={styles.image}  /></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo6.png' src='/photo6.png' loading='lazy'  width={367} height={421}  srcSet='/photo6@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100}  blurDataURL='/photo1.png' src='/photo1.png' loading='lazy' width={367} height={421} srcSet='/photo1@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo2.png' src='/photo2.png' loading='lazy' width={367} height={421} srcSet='/photo2@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo3.png' src='/photo3.png' loading='lazy' width={367} height={421} srcSet='/photo3@2x.png' alt='Ритуальные услуги'   className={styles.image}/></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo4.png' src='/photo4.png' loading='lazy'  width={367} height={421} srcSet='/photo4@2x.png' alt='Ритуальные услуги быстро высшее качество' className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo5.png' src='/photo5.png' loading='lazy'  width={367} height={421}	srcSet='/photo5@2x.png' alt='Ритуальные услуги' className={styles.image}  /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo6.png' src='/photo6.png' loading='lazy'  width={367} height={421}  srcSet='/photo6@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
 				</div>
 				<div className={cn(styles.item, styles.hidden)}>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo7.png' src='/photo7.png' loading='lazy' width={367} height={421} srcSet='/photo7@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo8.png' src='/photo8.png' loading='lazy' width={367} height={421} srcSet='/photo8@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo9.png' src='/photo9.png' loading='lazy' width={367} height={421} srcSet='/photo9@2x.png' alt='Ритуальные услуги'   className={styles.image}/></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo10.png' src='/photo10.png' loading='lazy'  width={367} height={421} srcSet='/photo10@2x.png' alt='Ритуальные услуги' className={styles.image} /></div>
-					<div><Image placeholder='blur' 	quality={100}  blurDataURL='/photo11.png' src='/photo11.png' loading='lazy'  width={367} height={421}srcSet='/photo11@2x.png' alt='Ритуальные услуги' className={styles.image}  /></div>
-					<div><Image placeholder='blur'  quality={100} blurDataURL='/photo12.png' src='/photo12.png' loading='lazy'  width={367} height={421}  srcSet='/photo12@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo7.png' src='/photo7.png' loading='lazy' width={367} height={421} srcSet='/photo7@2x.png' alt='Ритуальные услуги'  className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo8.png' src='/photo8.png' loading='lazy' width={367} height={421} srcSet='/photo8@2x.png' alt='Ритуальные услуги' className={styles.image}/></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo9.png' src='/photo9.png' loading='lazy' width={367} height={421} srcSet='/photo9@2x.png' alt='Ритуальные услуги'   className={styles.image}/></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo10.png' src='/photo10.png' loading='lazy'  width={367} height={421} srcSet='/photo10@2x.png' alt='Ритуальные услуги' className={styles.image} /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur' 	quality={100}  blurDataURL='/photo11.png' src='/photo11.png' loading='lazy'  width={367} height={421}srcSet='/photo11@2x.png' alt='Ритуальные услуги' className={styles.image}  /></div>
+					<div className={styles.hoverImg}><Image placeholder='blur'  quality={100} blurDataURL='/photo12.png' src='/photo12.png' loading='lazy'  width={367} height={421}  srcSet='/photo12@2x.png'  alt='Ритуальные услуги' className={styles.image} /></div>
 				</div>
 			</div>
 			<Button className={styles.button} onClick={(e)=>toggleBlock(e)}>Показать больше</Button>
