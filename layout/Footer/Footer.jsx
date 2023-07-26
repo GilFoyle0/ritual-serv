@@ -22,7 +22,7 @@ export const Footer = ({className, ...props }) => {
 				<div className={styles.companyData}>
 					<div>
 						<div className={cn(styles.itemTitle, montserrat.className)}>Данные Компании</div>
-						<div className={styles.geo}>г.Ухта п.Шудаяг Тимирязева д.5</div>
+						<div className={styles.geo}>г.Ухта п.Шудаяг Тимирязева д.3</div>
 						<div className={styles.companyInfo}><span>ИНН:</span> 110503797600</div>
 						<div className={styles.companyInfo}><span>ОГРН:</span> 309110516100025</div>
 						<div className={styles.fioIP}>ИП Скоряк Юлия Васильевна</div>

@@ -1,6 +1,7 @@
 .section {
-	padding-top: 500px;
-	padding-bottom: 250px;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	overflow: hidden;
 }
 
 
@@ -12,6 +13,7 @@
 }
 
 .header {
+	z-index: 100px;
 	display: grid;
 	grid-template-rows: auto auto auto;
 	justify-items: center;
@@ -52,6 +54,7 @@
 }
 
 .itemContainer {
+	z-index: 100;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;

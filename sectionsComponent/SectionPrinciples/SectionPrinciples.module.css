@@ -1,5 +1,5 @@
 .section {
-	padding-top: 250px;
+	padding-top: 100px;
 	padding-bottom: 400px;
 }
 
@@ -203,6 +203,9 @@
 }
 
 @media screen and (max-width: 479.98px) {
+	.section {
+		padding-top: 0px;
+	}
 
 	.wrapper {
 		row-gap: calc(30px + (100 - 30) * ((100vw - 360px) / (479.98 - 360)));

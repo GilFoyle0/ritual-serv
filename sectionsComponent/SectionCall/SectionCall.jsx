@@ -14,7 +14,7 @@ export default function SectionCall({className, isModal, closeModal, ...props}) 
 	const [value, setValue] = useState('');
 
     var data_js = {
-        "access_token": "zu3boxuxy8em159y4mbhijrr"
+        "access_token": "a78517izhl1k5qjdatqyurtu"
     };
 
 
@@ -48,9 +48,6 @@ export default function SectionCall({className, isModal, closeModal, ...props}) 
 			text.style.display = 'block';
 			text.textContent = 'Спасибо за оставленную заявку. В ближайшее время с вами свяжутся.'
 			input.style.border = 'none'
-			if(isModal) {
-				closeModal();
-			}
 			e.preventDefault();
 		}
 	}
@@ -77,7 +74,7 @@ export default function SectionCall({className, isModal, closeModal, ...props}) 
 				<p className={styles.agreement}>Нажимая на кнопку, вы даёте согласие на обработку персональныхданных и соглашаетесь с политикой конфиденциальности</p>
 				</form>
 				<div className={styles.footer}>
-					<span className={styles.phone}>+7(939) 744-20-22</span>
+					<span className={styles.phone}>+7(912) 949-49-40</span>
 					<span className={styles.subDesc}>круглосуточно</span>
 				</div>
 			</div>

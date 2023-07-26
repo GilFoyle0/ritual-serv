@@ -25,6 +25,15 @@ import cn from 'classnames';
 import Head from 'next/head';
 
  function Main() {
+	function showExmpImage(flag) {
+		const boy = document.getElementsByClassName(styles.boy2)[0];
+		if(flag) {
+			boy.style.display = 'block';
+			console.log('true');
+		} else {
+			boy.style.display = 'none';
+		}
+	} 
   return (
 	
     <div className={styles.main}>
@@ -37,7 +46,7 @@ import Head from 'next/head';
 		<meta property="og:locale" content="ru_Ru"/>
 		<meta property="og:type" content="website"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	</Head>
+		</Head>
 		<div className={cn(styles.sectionWrap, styles.top)}>
 			<div className={cn(styles.clouds, styles.cloudsService)}><Image placeholder='blur' src={CloudsService} alt='облака' width={2600} quality={100}/></div>
 			<SectionTop className={styles.sectionTop}/>
@@ -61,14 +70,14 @@ import Head from 'next/head';
 			<Image placeholder='blur' src={Gvozdika} alt='гвоздики' width='100%' quality={100} className={styles.gvozdika}/>
 			<Image placeholder='blur' src={Memory} alt='память' width='100%' quality={100} className={styles.memory}/>
 			<SectionWork className={styles.sectionWork}/>
-		</div>
-		<div className={cn(styles.sectionWrap, styles.exapmples)}>
 			<Image placeholder='blur' src={CloudEx1} alt='облака' width='100%' quality={100} className={cn(styles.clouds, styles.cloudEx1)}/>
+		</div>
+		<div className={cn(styles.sectionWrap, styles.examples)}>
 			<div className={styles.backgroundExmp}/>
 			<Image placeholder='blur' src={Roses} alt='розы' width='100%' quality={100} className={cn(styles.roses)}/>
 			<Image placeholder='blur' src={Boy2} alt='мальчик' width='100%' quality={100} className={cn(styles.boy2)}/>
 			<Image placeholder='blur' src={Statue} alt='статуя' quality={100} className={cn(styles.statue)}/>
-			<SectionExamples className={styles.sectionExamples}/>
+			<SectionExamples showExmpImage={showExmpImage} className={styles.sectionExamples}/>
 			<Image placeholder='blur' src={CloudEx2} alt='облака' width='100%' quality={100} className={cn(styles.clouds, styles.cloudEx2)}/>
 		</div>
 		<div className={cn(styles.sectionWrap, styles.whyWe)}>

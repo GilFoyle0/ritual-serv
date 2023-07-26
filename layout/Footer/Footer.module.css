@@ -14,9 +14,8 @@
 .footerCloud {
 	z-index: -1;
 	position: absolute;
-	width: 100%;
+	top: -550px;
 	object-fit: cover;
-	top: 0;
 }
 
 .footerBack {

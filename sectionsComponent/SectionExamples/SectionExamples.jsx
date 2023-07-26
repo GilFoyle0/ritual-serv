@@ -7,14 +7,16 @@ import Button from '@/components/Button/Button';
 
 
 
-export default function SectionExamples({className, ...props}) {
+export default function SectionExamples({className, showExmpImage,...props}) {
 
 	const toggleBlock = (e) => {
 		const block = document.getElementsByClassName(styles.item)[1]
 		if (block.classList.toggle(styles.hidden)) {
 			e.currentTarget.textContent = 'Показать больше';
+			showExmpImage(false)
 		} else {
 			e.currentTarget.textContent = 'Показать меньше';
+			showExmpImage(true)
 		}
 	}
 

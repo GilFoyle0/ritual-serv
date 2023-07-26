@@ -67,6 +67,12 @@
 	right: 30px;
 }
 
+@media screen and (max-width: 435px) {
+	.close {
+		right: 17px;
+	}
+}
+
 .close:hover,
 .close:focus {
 	color: black;
