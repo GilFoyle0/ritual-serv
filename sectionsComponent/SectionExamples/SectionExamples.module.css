@@ -136,6 +136,8 @@
 	}
 }
 
+@media screen and (max-width: 582px) {}
+
 @media screen and (max-width: 548px) {
 
 	.description {
@@ -168,17 +170,17 @@
 }
 
 
+@media (hover: hover) {
+	.hoverImg img {
+		transition: transform .2s;
+		margin: 0 auto;
+		background-color: rgb(173, 173, 237);
+		border-radius: 10px;
+	}
 
-
-.hoverImg img {
-	transition: transform .2s;
-	margin: 0 auto;
-	background-color: rgb(173, 173, 237);
-	border-radius: 10px;
-}
-
-.hoverImg img:hover {
-	z-index: 100;
-	position: absolute;
-	transform: scale(1.5);
+	.hoverImg img:hover {
+		z-index: 100;
+		position: absolute;
+		transform: scale(1.5);
+	}
 }
