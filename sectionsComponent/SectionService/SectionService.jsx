@@ -43,7 +43,7 @@ export default function SectionService({className, ...props}) {
 						<div className={styles.item} >
 							<Image loading='lazy' src={LiftIcon} alt='Лифт' className={styles.icon}/>
 							<div className={cn(styles.itemTitle, montserrat.className)}>Лифт</div>
-							<div className={cn(styles.description, roboto.className)}>Это устройство которое позволяет бережно и плавно опустить гроб в могилу в столь ответственный момент</div>
+							<div className={cn(styles.description, roboto.className)}>Работаем с помощью Сингуматора (Ритуальный лифт, это устройство которое помогает плавно и бережно опустить гроб в могилу. Сингуматор это норма погребения и способ выразить своё отношение к умершему. Сингуматор исключает падение или переворачивание гроба)</div>
 						</div>
 					</div>
 				</div>

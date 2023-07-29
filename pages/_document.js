@@ -1,15 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-import { Metadata } from 'next';
-
-export const metadata = {
-  title: 'Sling Academy',
-  description:
-    'This is a meta description. Welcome to slingacademy.com. Happy coding and have a nice day',
-};
-
-
-
 
 export default function Document() {
   return (
